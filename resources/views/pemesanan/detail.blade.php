@@ -1,0 +1,139 @@
+@extends('layout.app')
+
+@section('content')
+    <section style="background-color: #FAFAF7">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 my-5">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>
+                                        Mareli Heels Sendal Wanita Ukuran 38
+                                        <span class="float-right">NO. PESANAN. 30N3210I02J2 </span>
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            Belum Bayar
+                                            <h5 class="py-1 text-center" style="background: url({{ asset('img/progres/progres5.png') }}) no-repeat center;background-size:98%; color:white;">{{ now()->format("d M Y") }}</h5>
+                                        </div>
+                                        <div class="col-3">
+                                            Dikemas
+                                            <h5 class="py-1 text-center" style="background: url({{ asset('img/progres/progres2.png') }}) no-repeat center;background-size:98%;">{{ now()->format("d M Y") }}</h5>
+                                        </div>
+                                        <div class="col-3">
+                                            Dikirim
+                                            <h5 class="py-1 text-center" style="background: url({{ asset('img/progres/progres2.png') }}) no-repeat center;background-size:98%;">{{ now()->format("s M Y") }}</h5>
+                                        </div>
+                                        <div class="col-3">
+                                            Selesai
+                                            <h5 class="py-1 text-center" style="background: url({{ asset('img/progres/progres2.png') }}) no-repeat center;background-size:98%;">{{ now()->format("d M Y") }}</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <img src="{{ asset('img/product/mareli.png') }}" alt="">
+                                        </div>
+                                        <div class="col-10">
+                                            <table>
+                                                <tr>
+                                                    <td>Total Item</td>
+                                                    <td class="px-3"> : </td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Total Harga</td>
+                                                    <td class="px-3"> : </td>
+                                                    <td>Rp250.000</td>
+                                                </tr>
+                                            </table>
+                                            <div class="row mt-5">
+                                                <div class="col-12 text-right">
+                                                    <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-sm" style="background:white; border:solid 0.5px #cccc "><i class="fa fa-money"></i> Lakukan Penawaran</button>
+                                                </div>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Lakukan Penawaran untuk produk Mareli Heels Sendal Wanita Ukuran 38</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    Sebelum Ditawar
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    Sesudah Ditawar
+                                                                </div>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                                                    <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text">Rp</div>
+                                                                    </div>
+                                                                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username" value="280.000" disabled>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                                                                    <div class="input-group mb-2">
+                                                                    <div class="input-group-prepend">
+                                                                        <div class="input-group-text">Rp</div>
+                                                                    </div>
+                                                                    <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="harga tawaran">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                                                            <a href="{{ route('pesanan.penawaran') }}" class="btn btn-primary">Simpan</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-header bg-white">
+                                    Info Penjual
+                                    <a href="" class="btn btn-sm btn-light float-right" style="color:rgba(139, 134, 134, 0.8)"><i class="fa fa-comment"></i> Chat</a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img src="{{ asset('img/logo2.jpeg') }}" alt="">
+                                        </div>
+                                        <div class="col-6" style="font-size: 90%">
+                                            <a href="">HKBP Store App</a><br>
+                                            <span style="font-size: 11px">Jakarta Selatan</span>
+                                        </div>
+                                        <div class="col-3">
+                                            <span><i class="fa fa-star" style="color:#F89D25"></i> 4.5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection
