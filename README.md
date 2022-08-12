@@ -25,13 +25,21 @@ Kebutuhan Tools
 Akun User
 
 1. Admin
+
    Username : admin@gmail.com
+   
    Password : admin123
-3. Pembeli
+   
+2. Pembeli
+
    Username : pangihutan@gmail.com
+   
    Password : pangihutan123
-5. Penjual
+   
+ 3. Penjual
+ 
    Username : masturi@gmail.com
+   
    Password : masturi123
 
 ## Langkah-langkah instalasi
